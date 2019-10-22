@@ -1,0 +1,29 @@
+{
+  "launcher_configuration": {
+    "condition": [
+      {
+        "id": "BT001",
+        "description": "hogehoge",
+        "type": "java",
+        "jar": "AllargsStdout.jar",
+        "option": [ "-r", "hoge", "parameter" ],
+        "success_code": [ 0 ]
+      },
+      {
+        "id": "BT002",
+        "description": "hogehoge",
+        "type": "asteria",
+        "url": "https://example.com/api",
+        "success_code": [ 200 ]
+      },
+      {
+        "id": "BT003",
+        "description": "change Successcode 1",
+        "type": "java",
+        "jar": "AllargsStdout.jar",
+        "option": [ "-r", "hoge", "parameter" ],
+        "success_code": [ 1 ]
+      }
+    ]
+  }
+}
