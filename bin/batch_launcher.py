@@ -14,12 +14,12 @@ import datetime
 '''
 # ENV Check
 assert(os.environ["JAVA_HOME"])
-assert(os.environ["GJK_ROOT"])
-ROOT_DIR = os.environ["GJK_ROOT"]
+#assert(os.environ["GJK_ROOT"])
+ROOT_DIR = '/Users/k22/Develop/batch_launcher/' #os.environ["GJK_ROOT"]
 BIN_DIR = os.path.join(ROOT_DIR, 'bin')
 LOG_DIR = os.path.join(ROOT_DIR, 'log')
 LIB_DIR = os.path.join(ROOT_DIR, "lib")
-LAUNCH_FILE_PATH = os.parh.join(ROOT_DIR, 'conf', 'launcher_config.json')
+LAUNCH_FILE_PATH = os.path.join(ROOT_DIR, 'conf', 'launcher_config.json')
 
 # Arg check
 if len(sys.argv) < 3:
